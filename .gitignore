@@ -125,3 +125,7 @@ desktop.ini
 # PERSONAL ADDITIONS
 # ============================================
 # Add your project-specific ignores below
+
+# Claude settings (personal configuration)
+.claude/settings.local.json
+.claude/
