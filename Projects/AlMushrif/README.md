@@ -1,0 +1,32 @@
+# AlMushrif
+
+## Description
+<!-- Project description -->
+
+## Installation
+```bash
+# Installation instructions
+```
+
+## Usage
+```bash
+# Usage examples
+```
+
+## Project Structure
+```
+AlMushrif/
+├── src/          # Source code
+├── docs/         # Documentation
+├── tests/        # Test files
+└── README.md     # This file
+```
+
+## Development
+<!-- Development guidelines -->
+
+## Contributing
+<!-- Contribution guidelines -->
+
+## License
+<!-- License information -->

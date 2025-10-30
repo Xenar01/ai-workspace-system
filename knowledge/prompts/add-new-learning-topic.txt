@@ -1,0 +1,37 @@
+# Quick Command: Add New Learning Topic
+
+When you want to start learning a new technology, copy and paste this prompt to Claude Code:
+
+---
+
+Create a new learning topic structure for "{TOPIC_NAME}":
+
+1. Create folders:
+   - Learning/{TOPIC_NAME}/
+   - Learning/{TOPIC_NAME}/experiments/
+   - Learning/{TOPIC_NAME}/notes/
+   - Learning/{TOPIC_NAME}/.session-notes/
+
+2. Copy the template from Learning/templates/learning-context-template.md
+   to Learning/{TOPIC_NAME}/.context.md
+
+3. In the new .context.md file:
+   - Replace all {TOPIC_NAME} with the actual topic name
+   - Add 3-5 specific learning goals for this topic
+   - Add official documentation URL
+   - Set "Started" date to today
+   - Set "Current Phase" to "Getting Started"
+
+4. Show me the created structure and the customized .context.md
+
+---
+
+**Instructions:**
+1. Replace {TOPIC_NAME} with your new topic (e.g., "docker", "typescript", "supabase")
+2. After creation, update the learning goals to be specific to what you want to learn
+3. Add any known resources or documentation links
+
+**Examples:**
+- Learning/{TOPIC_NAME}/ becomes Learning/docker/
+- Learning/{TOPIC_NAME}/ becomes Learning/typescript/
+- Learning/{TOPIC_NAME}/ becomes Learning/supabase/

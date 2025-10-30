@@ -1,0 +1,127 @@
+# AI Workspace .gitignore
+# This controls what gets committed to GitHub
+
+# ============================================
+# KEEP TEMPLATES, IGNORE PERSONAL CONTENT
+# ============================================
+
+# Session notes (personal work logs)
+**/.session-notes/*
+!**/.session-notes/.gitkeep
+
+# Personal context files (keep templates only)
+Projects/AlMushrif/.context.md
+Projects/AlMuwajjeh/.context.md
+Learning/n8n/.context.md
+Learning/mcp-servers/.context.md
+Learning/notion/.context.md
+
+# Keep template files
+!Projects/templates/
+!Learning/templates/
+
+# Personal project code (users will add their own)
+Projects/*/src/**
+Projects/*/docs/**
+Projects/*/tests/**
+
+# Exclude example projects entirely if uncommented
+# Projects/AlMushrif/
+# Projects/AlMuwajjeh/
+
+# Personal learning content
+Learning/*/experiments/**
+Learning/*/notes/**
+
+# Personal chats and planning
+chats/**
+!chats/README.md
+
+# Sandbox experiments (temporary)
+sandbox/**
+!sandbox/README.md
+
+# Archives
+archive/**
+
+# ============================================
+# STANDARD IGNORES
+# ============================================
+
+# Dependencies
+node_modules/
+vendor/
+packages/
+.pnp/
+.pnp.js
+venv/
+env/
+.venv/
+
+# Build outputs
+dist/
+build/
+out/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Environment & Secrets
+.env
+.env.local
+.env*.local
+*.key
+*.pem
+secrets.json
+config.local.*
+*.secret
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.test.cache
+.pytest_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.cache
+*.bak
+
+# OS generated
+Thumbs.db
+.DS_Store
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Package manager locks (optional - uncomment if you want to exclude)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# PERSONAL ADDITIONS
+# ============================================
+# Add your project-specific ignores below
