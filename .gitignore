@@ -129,3 +129,6 @@ desktop.ini
 # Claude settings (personal configuration)
 .claude/settings.local.json
 .claude/
+
+# Personal startup script with Claude Code path
+start-ai-session-personal.bat
