@@ -77,6 +77,68 @@ my-secret-data/
 - Node.js (if working with JavaScript projects)
 - Python (if working with Python projects)
 
+## Installing AI Tools
+
+### Claude Code (Recommended for Windows)
+
+Claude Code works natively on Windows and provides an excellent coding experience.
+
+**Installation:**
+1. Visit https://claude.ai/download
+2. Download Claude Code for Windows
+3. Install and authenticate with your Claude account
+4. Verify: Open terminal and run `claude --version`
+
+### Codex CLI (Recommended for Advanced Users)
+
+Codex CLI from OpenAI works best in WSL2 on Windows or natively on Linux/Mac.
+
+**Prerequisites:**
+- Windows users: Install WSL2 (Ubuntu recommended)
+- Node.js 18+ and npm
+
+**Installation (WSL2/Linux/Mac):**
+```bash
+# Install Node.js (if not installed)
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Configure npm for global packages without sudo
+mkdir -p ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+```
+
+```bash
+# Install Codex CLI
+npm install -g @openai/codex
+
+# Verify installation
+codex --version
+
+# Create symlink to AI folder (for easy access)
+ln -s /mnt/c/AI ~/AI
+```
+
+**First Run:**
+```bash
+cd ~/AI
+codex
+```
+
+Follow the authentication prompts to sign in with your ChatGPT Plus/Pro/Team/Enterprise account or use an OpenAI API key.
+
+**Startup Script:**
+The included `start-ai-session-codex.sh` script provides the same menu-driven experience as the Windows script.
+
+### Using Both Tools
+
+You can use both Claude Code and Codex CLI with the same workspace:
+- Claude Code: Native Windows experience
+- Codex CLI: Terminal-based, runs in WSL2
+- Both access the same files via `/mnt/c/AI` (WSL2) or `C:\AI` (Windows)
+
 ### 5. Test Your Setup
 
 **Windows:**

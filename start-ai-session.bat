@@ -1,4 +1,5 @@
 @echo off
+:start
 cls
 echo ========================================
 echo    AI Workspace Session Starter
@@ -55,7 +56,19 @@ echo Confirm context and today's goal.
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -77,7 +90,19 @@ echo Confirm context and today's goal.
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -99,7 +124,19 @@ echo Today I'm learning: [describe goal]
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -121,7 +158,19 @@ echo Today I'm learning: [describe goal]
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -143,7 +192,19 @@ echo Today I'm learning: [describe goal]
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -159,7 +220,19 @@ echo Planning sessions can reference multiple projects
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -175,7 +248,19 @@ echo Brainstorming - extract insights to /knowledge/
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -191,7 +276,19 @@ echo Experiments - temporary workspace
 echo.
 echo Current directory: %CD%
 echo.
+echo Options:
+echo   [Enter] - Continue (start AI manually)
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
+echo.
 echo Now start your AI assistant (Claude Code, Cursor, etc.)
+echo Current directory: %CD%
 echo.
 pause
 goto end
@@ -227,6 +324,17 @@ if "%guidechoice%"=="4" (
     start "" "%~dp0AI-SYSTEM-INSTRUCTIONS.md"
     echo Opening System Instructions...
 )
+echo.
+echo Options:
+echo   [Enter] - Continue
+echo   [b] - Back to menu
+echo   [q] - Quit
+echo.
+set /p nav_choice="Choose: "
+
+if /i "%nav_choice%"=="b" goto start
+if /i "%nav_choice%"=="q" goto end
+
 echo.
 pause
 goto end

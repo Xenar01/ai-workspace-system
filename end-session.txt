@@ -1,0 +1,34 @@
+# End of Session Checklist
+
+**Instructions for Claude:** When the user asks you to "run end session" or "end-session", read this file and execute the checklist below.
+
+---
+
+Run the end-of-session checklist and show me what you plan to update BEFORE making changes:
+
+1. UPDATE .context.md:
+   - Add today's accomplishments to "Current Focus"
+   - Document any new decisions under "Key Decisions" with WHY
+   - Update "Next Steps"
+   - Add "Last updated" timestamp with today's date
+
+2. CREATE/UPDATE SESSION NOTE:
+   - File: .session-notes/[TODAY'S DATE].md
+   - Include: goals, what was done, decisions made, next steps, any blockers
+   - Use the template from /Projects/templates/session-note-template.md
+
+3. ORGANIZE FILES:
+   - Any reusable code → suggest moving to /knowledge/snippets/
+   - Any new patterns/guides → suggest moving to /knowledge/guides/
+   - List any temporary files in /sandbox/ that should be kept or deleted
+
+4. UPDATE SHARED KNOWLEDGE (if applicable):
+   - If decisions affect multiple projects → update /knowledge/shared-decisions.md
+   - Suggest adding references in related .context.md files
+
+5. SUMMARY:
+   - What we accomplished today
+   - What's next
+   - Any action items for me
+
+Show me everything you'll update, then ask for my approval before making changes.

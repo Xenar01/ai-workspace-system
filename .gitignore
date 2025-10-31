@@ -130,5 +130,9 @@ desktop.ini
 .claude/settings.local.json
 .claude/
 
-# Personal startup script with Claude Code path
+# Personal startup scripts (tool-specific configurations)
 start-ai-session-personal.bat
+start-codex.bat
+
+# WSL2 personal configurations (if any future personal tweaks)
+# start-ai-session-codex-personal.sh

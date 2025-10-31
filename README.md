@@ -56,38 +56,35 @@ AI/
 
 ### 🚀 Quick Start
 
-1. **Clone this repository:**
+### For Claude Code (Windows):
 ```bash
-git clone https://github.com/yourusername/ai-workspace-system.git
-cd ai-workspace-system
+cd C:\AI
+start-ai-session-personal.bat
 ```
 
-2. **Customize the templates:**
-   - Fill in `Projects/{YourProject}/.context.md` with your project details
-   - Update `Learning/{YourTopic}/.context.md` with your learning goals
-   - Edit `.aiignore` for your specific needs
-
-3. **Start a session:**
-
-   **Windows:**
+### For Codex CLI (WSL2/Linux):
 ```bash
-start-ai-session.bat
+wsl
+cd ~/AI
+bash start-ai-session-codex.sh
 ```
 
-   **Mac/Linux:**
-```bash
-chmod +x start-ai-session.sh
-./start-ai-session.sh
-```
+Choose your project, copy the prompt shown, paste into your AI tool, and start working!
 
-4. **Load context in your AI assistant:**
-```
-Read these files in order:
-1. /AI-SYSTEM-INSTRUCTIONS.md
-2. Projects/{ProjectName}/.context.md
+### 🔄 Using Multiple AI Tools
 
-Today we're working on: [your goal]
-```
+This system supports using **both Claude Code and Codex CLI** (or any other AI tools) with the **same workspace**:
+
+- **Same files**: All tools access the same `.context.md` files
+- **Same workflow**: Start script → Copy prompt → Work → End session
+- **No duplication**: One source of truth for all AI assistants
+
+**Example workflow:**
+- Use Claude Code for complex reasoning and planning
+- Use Codex CLI for quick code generation and terminal work
+- Both read from the same project context and knowledge base
+
+All changes are saved to the same files, so you can switch tools anytime!
 
 ### 📖 Documentation
 
@@ -146,15 +143,20 @@ cd Projects/my-app
 # Update .context.md, create session notes
 ```
 
-### 🛠️ Compatible Tools
+### 🛠️ Compatible AI Tools
 
-This system works with:
-- ✅ Claude Code (Anthropic)
-- ✅ GitHub Copilot
-- ✅ Cursor AI
-- ✅ OpenAI Codex
-- ✅ Codeium
-- ✅ Any AI coding assistant that reads files
+This workspace system works with any AI coding assistant that can read local files:
+
+#### Officially Supported & Tested:
+- ✅ **Claude Code** (Anthropic) - Full support with startup script
+- ✅ **Codex CLI** (OpenAI) - Full support with WSL2 startup script
+- ✅ **GitHub Copilot** (Microsoft) - Works in VS Code
+- ✅ **Cursor** (Cursor.sh) - Editor with AI integration
+
+#### Also Compatible:
+- Any AI tool that can read Markdown files
+- Custom AI integrations via API
+- Terminal-based AI assistants
 
 ### 📦 What's Included
 
