@@ -49,7 +49,7 @@ echo.
 echo COPY THIS to your AI assistant:
 echo.
 echo Read these files in order:
-echo 1. /AI-SYSTEM-INSTRUCTIONS.md
+echo 1. C:\AI\AI-SYSTEM-INSTRUCTIONS.md
 echo 2. Projects/AlMushrif/.context.md
 echo.
 echo Confirm context and today's goal.
@@ -83,7 +83,7 @@ echo.
 echo COPY THIS to your AI assistant:
 echo.
 echo Read these files in order:
-echo 1. /AI-SYSTEM-INSTRUCTIONS.md
+echo 1. C:\AI\AI-SYSTEM-INSTRUCTIONS.md
 echo 2. Projects/AlMuwajjeh/.context.md
 echo.
 echo Confirm context and today's goal.
@@ -117,7 +117,7 @@ echo.
 echo COPY THIS to your AI assistant:
 echo.
 echo Read these files in order:
-echo 1. /AI-SYSTEM-INSTRUCTIONS.md
+echo 1. C:\AI\AI-SYSTEM-INSTRUCTIONS.md
 echo 2. Learning/n8n/.context.md
 echo.
 echo Today I'm learning: [describe goal]
@@ -151,7 +151,7 @@ echo.
 echo COPY THIS to your AI assistant:
 echo.
 echo Read these files in order:
-echo 1. /AI-SYSTEM-INSTRUCTIONS.md
+echo 1. C:\AI\AI-SYSTEM-INSTRUCTIONS.md
 echo 2. Learning/mcp-servers/.context.md
 echo.
 echo Today I'm learning: [describe goal]
@@ -185,7 +185,7 @@ echo.
 echo COPY THIS to your AI assistant:
 echo.
 echo Read these files in order:
-echo 1. /AI-SYSTEM-INSTRUCTIONS.md
+echo 1. C:\AI\AI-SYSTEM-INSTRUCTIONS.md
 echo 2. Learning/notion/.context.md
 echo.
 echo Today I'm learning: [describe goal]

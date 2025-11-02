@@ -1,8 +1,10 @@
 # End of Session Checklist
 
-**Instructions for Claude:** When the user asks you to "run end session" or "end-session", read this file and execute the checklist below.
+**Instructions for Claude:** When the user asks you to "run end session" or "end-session", read this file and execute the appropriate checklist below based on the project type.
 
 ---
+
+## For Projects (Development Work)
 
 Run the end-of-session checklist and show me what you plan to update BEFORE making changes:
 
@@ -32,3 +34,57 @@ Run the end-of-session checklist and show me what you plan to update BEFORE maki
    - Any action items for me
 
 Show me everything you'll update, then ask for my approval before making changes.
+
+---
+
+## For Learning (Educational Projects)
+
+Run the end-of-session checklist for learning and show me what you plan to update BEFORE making changes:
+
+1. UPDATE .context.md:
+   - Mark completed goals (check boxes)
+   - Update progress tracker with current phase and date
+   - Add key concepts learned to "Key Concepts Learned" section
+   - Note any experiments done in "Experiments & Practice"
+   - Document any questions/blockers in "Questions & Blockers"
+   - Update "Next Up" with what to learn next
+   - Add "Last updated" timestamp with today's date
+
+2. CREATE/UPDATE SESSION NOTE:
+   - File: .session-notes/[TODAY'S DATE].md
+   - Include:
+     * What I learned today (key concepts, skills, insights)
+     * What I built (workflows, experiments, projects)
+     * Challenges & solutions encountered
+     * Key takeaways
+     * What to work on next session
+     * Resources used (links, docs, tutorials)
+
+3. ORGANIZE LEARNING MATERIALS:
+   - Any reusable patterns/code → suggest moving to /knowledge/ folder
+   - Completed lesson materials → keep organized in /lessons/
+   - Test projects → organize in /experiments/
+   - Personal notes → keep in /notes/
+   - List any files that should be cleaned up
+
+4. UPDATE LEARNING RESOURCES:
+   - Add useful links to "Resources" section in .context.md
+   - Note any tutorials completed
+   - Update related project ideas
+
+5. SUMMARY:
+   - What we learned/accomplished today
+   - Current learning phase
+   - What's next in the learning path
+   - Any blockers or questions to address
+
+Show me everything you'll update, then ask for my approval before making changes.
+
+---
+
+## Quick Reference
+
+**Project Type Detection:**
+- If in `/Projects/` → Use "For Projects" checklist
+- If in `/Learning/` → Use "For Learning" checklist
+- When unsure → Ask user which checklist to use
